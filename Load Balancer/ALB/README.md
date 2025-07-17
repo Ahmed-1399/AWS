@@ -11,6 +11,14 @@ Welcome to the documentation for the **Application Load Balancer (ALB)** archite
 ---
 
 ## 🖥️ Instances
+```bash
+#!/bin/bash
+dnf update -y
+dnf install -y httpd
+systemctl enable --now httpd
+
+echo "<h1> Instance-<Number> </h1>" > /var/www/html/index.html
+```
 
 ### Instance 1
 ![🖼️ Instance 1](./assets/instance-1.png)
