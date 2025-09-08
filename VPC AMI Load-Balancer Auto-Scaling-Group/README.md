@@ -314,7 +314,7 @@ You should see **two new instances named Lab Instance**
 
 In **Target Group**:  
 **Two target instances named Lab Instance** should be listed in the **target group**.
-![Lab instance Target Group](./assets/Lab-instance-EC2.png)
+![Lab instance Target Group](./assets/Lab-instance-Target-Group.png)
 
 In **Load Balancer**:  
 Copy **DNS Name** and paste it in the **Browser**.
@@ -333,9 +333,9 @@ From **Auto Scaling Group**:
     - Update
  
 **CloudWatch Alarm**
-![Alarm](.//assets/Alarm.png)
+![Alarm](./assets/Alarm.png)
 
-Increase number of **instance**
+Increase number of **instances**
 ![more instances](./assets/more-instances.png)
 
 
