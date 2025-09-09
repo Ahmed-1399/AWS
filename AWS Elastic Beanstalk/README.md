@@ -35,12 +35,22 @@ Let's get started! 😎🌱
 
 #### 🔐 Configure Service Access
 
+> **Service Role:**   
+> Create and manage resources (such as EC2, ELB, Auto Scaling, CloudWatch Logs, etc.).  
+> Monitor the status of your environment.
+
 - **Service Role:** *Create Role (Elastic Beanstalk)*
   - Elastic Beanstalk - Environment  
     - `aws-elasticbeanstalk-service-role` → *Role Name*
       - `AWSElasticBeanstalkEnhancedHealth`
       - `AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy`
     - ![aws-elasticbeanstalk-service-role](./assets/aws-elasticbeanstalk-service-role.png)
+
+> **EC2 Instance Profile:**  
+> The instance itself can:  
+> Download the application from S3  
+> Upload logs to CloudWatch  
+> Communicate with the Elastic Beanstalk service  
 
 - **EC2 Instance Profile:** *Create Role (Elastic Beanstalk)*
   - Elastic Beanstalk - Compute  
